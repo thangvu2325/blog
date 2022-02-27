@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css_3</title>
+	<style type="text/css">
+		#div_tong{
+			width: 100%;
+			height: 1500px;
+			/*background: red;*/
+		}
+		#div_san_ho{
+			width: 30%;
+			height: 100%;
+			background: black;
+			float: left;
+			position: relative;
+		}
+		#div_vien{
+			width: 7%;
+			height: 100%;
+			background-image: url('../images/soc.jpg');
+			float: left;
+		}
+		#div_sua{
+			width: 63%;
+			height: 100%;
+			background-image: url('../images/sua1.gif');
+			background-repeat: no-repeat;
+			background-position: center;
+			float: left;
+		}
+		.chu_to{
+			font-size: x-large;
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div id="div_san_ho">
+			<img src="../images/sanho.gif" style="width: 110%; z-index: 99; position:absolute; bottom: 0">
+		</div>
+		<div id="div_vien"></div>
+		<div id="div_sua">
+			<br>
+			<br>
+			<div style="padding-left: 50px; width: 55%; float: left">
+			<span class="chu_to">
+				<h1 style="padding-left: 20px; margin: 0;">THAM GIA CLB</h1>
+			</span>
+			<span style="padding-left: 40px; margin: 0">
+				Quý độc giả hãy điền đầy đủ thông tin để tham gia phát triển câu<br>
+				<span style="padding-left: 40px">lạc bộ ngày càng vững mạnh hơn</span>
+			</span>
+			<br>
+			<br>
+			<form style="background-color: forestgreen;">
+				<table style="padding-left: 30px">
+					<tr>
+						<td style="width: 80px">
+							Họ và tên
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="text" name="ten" style="width: 70%">*
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Địa Chỉ
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="text" name="ten" style="width: 90%%">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Email
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="text" name="ten" style="width: 70%">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Điện thoại
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="number" name="ten" style="width: 70%" placeholder="+84">
+						</td>
+					</tr>
+						<tr>
+						<td>
+							Ngày sinh
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="number" name="day" style="width: 30%;">
+							/<input type="number" name="month" style="width: 30%;">
+							/<input type="number" name="year" style="width: 30%;">
+						</td>
+					</tr>
+						<tr>
+						<td>
+							Đề tài
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<select>
+								<option>
+									Tìm hiểu Sứa biển
+								</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nhóm
+						</td>
+						<td>
+							 :
+						</td>
+						<td>
+							<input type="checkbox"> Nghiên cứu<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+						</td>
+						<td>
+						<input type="checkbox"> Hải ngư<br>
+							<input type="checkbox"> Viễn Dương<br>
+							<input type="checkbox"> Mỹ Thuật<br>
+							<input type="checkbox"> Thực phẩm<br>
+							<input type="checkbox"> Sinh viên<br> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Gửi hình
+						</td>
+						<td>
+							:
+						</td>
+						<td>
+							<input type="file" accept="image/*">	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tài liệu
+						</td>
+						<td>
+							:
+						</td>
+						<td>
+							<input type="checkbox"> Sinh vật biển
+						</td>
+					</tr>
+					<tr>
+						<td>					
+						</td>
+						<td>
+						</td>
+						<td>
+							<input type="checkbox"> Các loại sứa biển<br>
+							<input type="checkbox"> San hô<br>
+							<input type="checkbox"> Môi Trường biển<br>
+							<input type="checkbox"> Khí hậu<br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td></td>
+						<td>
+							<button type="submit">Tham gia</button>
+							<button type="Reset">Xóa thông tin</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+			</div>
+			<div style="width: 35%; float: left;">
+				<img src="../images/nhom1b.jpg">
+				<br>
+				<img src="../images/nhom1a.jpg">
+				<br>
+				<img src="../images/nhom1c.jpg">
+				<br>
+				<img src="../images/nhom1d.jpg">
+				<br>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
