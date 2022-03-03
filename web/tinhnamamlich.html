@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tinhnamamlich</title>
+	<style type="text/css">
+		.form{
+			color:  red;
+			size:  +2;
+		}
+		.p{
+			color:  red;
+			size: +1;
+		}
+		.button{
+			color:  Red;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 100%; height: 800px; position: relative; background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/06/22/anh-nen-powerpoint-don-gian-cuc-dep_093016816.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+		<div style="position: absolute; top: 300px; left:30%; background-image: url(http://thuthuatphanmem.vn/uploads/2018/06/04/hinh-nen-hoa-cuc-trang-dep_112139403.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; width: 40%; height: 200px; position: relative; ">
+	<form position: center>
+		<p align="center">
+			<br>
+			<br>
+			<table style="position:absolute; left: 100px">
+  			<tr>
+  				<td style="color:red ; margin: 20px;">
+  							<b>Năm dương lịch:</b>
+  				</td>
+  				<td width="120px"></td>
+  				<td style="color:red">
+  							<b>Năm âm lịch:</b>
+  				</td>
+			</tr>
+  			<tr>
+  				<td>
+  					<input type="number" name="nam" id="nam" style="width: 60%">
+  				</td>
+  			</tr>
+  			<tr>
+  				<td colspan="2">
+  					<button type="button" onclick="tinh_nam_am_lich()" style="position: absolute; left: 170px; border: 4px solid red; top: 50px;">check</button>
+  				</td>
+  			</tr>
+    </table>
+  </p>
+</form>
+	<div id="ketqua" style="position: absolute;left: 400px;border: 3px solid blue;width: 100px;top: 79px;">Kết quả</div>
+	<script type="text/javascript">
+			function tinh_nam_am_lich(){
+				let nam = parseInt(document.getElementById('nam').value);
+				let can;
+				let chi;
+				can = (nam - 3)%10
+				chi = (nam - 3)%12
+				switch(can){
+					case 0:
+						can = 'Quý'
+						break;
+					case 1:
+						can = 'Giáp'
+						break;
+					case 2:
+						can = 'Ất'
+						break;
+					case 3:
+						can = 'Bính'
+						break;
+					case 4:
+						can = 'Đinh'
+						break;
+					case 5:
+						can = 'Mậu'
+						break;
+					case 6:
+						can = 'Kỷ'
+						break;
+					case 7:
+						can = 'Canh'
+						break;
+					case 8:
+						can = 'Tân'
+						break;
+					case 9:
+						can = 'Nhâm'
+						break;
+				}
+				switch(chi){ 
+					case 0:
+						chi = 'Hợi'
+						break;
+					case 1:
+						chi = 'Tý'
+						break;
+					case 2:
+						chi = 'Sửu'
+						break;
+					case 3:
+						chi = 'Dần'
+						break;
+					case 4:
+						chi = 'Mão'	
+						break;
+					case 5:
+						chi = 'Thìn'
+						break;
+					case 6:
+						chi = 'Tỵ'
+						break;
+					case 7:
+						chi = 'Ngọ'
+						break;
+					case 8:
+						chi = 'Mùi'
+						break;
+					case 9:
+						chi = 'Thân'
+						break;
+					case 10:
+						chi = 'Dậu'
+						break;
+					case 11:
+						chi = 'Tuất' 
+						break; 
+				}
+				document.getElementById('ketqua').innerHTML = `${can} ${chi}`
+			}
+	</script>
+</div>
+</div>
+</body>
+</html>
